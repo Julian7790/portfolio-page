@@ -5,7 +5,8 @@ import { playButton, nextButton, pauseIcon } from '../icon'
 
 const musicData = [
   {name: 'Frank Ocean', source: '/music/FrankOcean.mp3' },
-  {name: "Bob Marley", source: '/music/BobMarley.mp3'}
+  {name: "Bob Marley", source: '/music/BobMarley.mp3'},
+  {name: "D4vd", source: '/music/Invincible.mp3'}
 ]
 
 

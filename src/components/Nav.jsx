@@ -30,7 +30,7 @@ const Nav = () => {
         </ul>
 
         
-        <div className='hidden max-lg:block mr-12 '>
+        <div className='hidden max-lg:block mr-12'>
           <button onClick={toggleMenu}>
             <img 
               src={menuOpen ? xIcon : hamburger} 

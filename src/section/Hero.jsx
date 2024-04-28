@@ -4,10 +4,11 @@ import { playButton, nextButton, pauseIcon } from '../icon'
 
 
 const musicData = [
-  {name: 'Frank Ocean', source: '/music/FrankOcean.mp3' },
+  {name: 'Tyla', source: '/music/Tyla.mp3' },
   {name: "Bob Marley", source: '/music/BobMarley.mp3'},
-  {name: "D4vd", source: '/music/Invincible.mp3'}
-]
+  {name: "D4vd", source: '/music/Invincible.mp3'},
+  {name: 'Frank Ocean', source: '/music/FrankOcean.mp3' }
+];
 
 
 const Hero = () => {
@@ -78,7 +79,6 @@ const Hero = () => {
           />
           </button>
           <h3 className='font-montserrat m-5 text-xl'>Grab some popcorn and play some music</h3>
-          
         </div>
       </div>
     </section>

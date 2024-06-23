@@ -4,7 +4,7 @@ import galaxy from '../images/galaxy.jpg';
 import backgroundImg from '../images/backgroundImg.jpg';
 import aboutMe from '../images/aboutMe.jpg';
 import nikeWeb from '../images/nikewebsite.jpg';
-
+import Splam from '../images/Splam.jpg';
 
 export {
     profileImage,
@@ -12,5 +12,6 @@ export {
     galaxy,
     backgroundImg,
     aboutMe,
-    nikeWeb
+    nikeWeb,
+    Splam
 }

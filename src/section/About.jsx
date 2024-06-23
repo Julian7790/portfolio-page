@@ -22,11 +22,11 @@ const About = () => {
            <div className='flex flex-row lg:mt-0 mt-4 justify-center lg:justify-between flex-wrap'>
            <div className='border border-gray-800 p-10 mr-20'>
              <h2 className='font-montserrat font-semibold text-3xl'>Experience</h2>
-             <h3 className='font-montserrat'>1+ Years</h3>
+             <h3 className='font-montserrat'>2 Years</h3>
              <h4>Front-End Development</h4>
            </div>
            <div className='border border-gray-800 p-10'>
-             <h2 className='font-montserrat font-semibold text-3xl'>Technology</h2>
+             <h2 className='font-montserrat font-semibold text-3xl'>My Tech Stack</h2>
              <img src={reactICON} 
              alt="reactIcon"
              width={50}

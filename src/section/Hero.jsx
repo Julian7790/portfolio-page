@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { profileImage2 } from '../images';
-import { playButton, nextButton, pauseIcon } from '../icon';
+import { playButton, nextButton, pauseIcon, previousIcon } from '../icon';
 
 const Hero = ({ isPlaying, setIsPlaying, currentSongIndex, setCurrentSongIndex, musicData }) => {
   const audioRef = useRef(new Audio(musicData[currentSongIndex].source));
@@ -17,6 +17,12 @@ const Hero = ({ isPlaying, setIsPlaying, currentSongIndex, setCurrentSongIndex, 
 
   const nextSong = () => {
     setCurrentSongIndex((currentSongIndex + 1) % musicData.length);
+  };
+
+  const previousSong = () => {
+    setCurrentSongIndex(
+      currentSongIndex === 0 ? musicData.length - 1 : currentSongIndex - 1
+    );
   };
 
   useEffect(() => {
@@ -43,9 +49,23 @@ const Hero = ({ isPlaying, setIsPlaying, currentSongIndex, setCurrentSongIndex, 
       <div className='flex flex-col bg-light-white'>
         <h3 className='font-montserrat m-5 text-xl'>Hi, my name is Julian Forte</h3>
         <h1 className='font-montserrat m-5 text-4xl font-bold'>I'm a Front End Developer.</h1>
-        <div className='flex flex-row gap-6'>
+        <div className='flex flex-row gap-6 items-center'>
+          {/* Previous Button */}
+          <button
+            onClick={previousSong}
+            className="hover:bg-gray-200 p-2 rounded transition duration-200 ease-in-out"
+          >
+            <img
+              src={previousIcon}
+              alt="previous button"
+              width={100}
+              height={100}
+            />
+          </button>
+           
           <button
             onClick={isPlaying ? pauseMusic : playMusic}
+            className="hover:bg-gray-200 p-2 rounded transition duration-200 ease-in-out"
           >
             <img
               src={isPlaying ? pauseIcon : playButton}
@@ -54,7 +74,9 @@ const Hero = ({ isPlaying, setIsPlaying, currentSongIndex, setCurrentSongIndex, 
               height={100}
             />
           </button>
-          <button onClick={nextSong}>
+          <button onClick={nextSong}
+           className="hover:bg-gray-200 p-2 rounded transition duration-200 ease-in-out"
+          >
             <img
               src={nextButton}
               alt='next button'

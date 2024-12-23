@@ -9,7 +9,8 @@ import email from './email.svg';
 import xIcon from './xICON.svg';
 import playButton from './playButton.svg';
 import nextButton from './nextButton.svg';
-import pauseIcon from './pauseIcon.svg'
+import pauseIcon from './pauseIcon.svg';
+import previousIcon from './previous.svg';
 
 export {
     hamburger,
@@ -23,5 +24,6 @@ export {
     xIcon,
     playButton,
     nextButton,
-    pauseIcon
+    pauseIcon,
+    previousIcon
 }
